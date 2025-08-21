@@ -1,13 +1,13 @@
-import ToggleSwitchTW from './snippets/toggle-switch/ToggleTW';
-import ToggleSwitch from './snippets/toggle-switch/ToggleSwitch';
-import ToggleSwitchMUI from './snippets/toggle-switch/ToggleMUI';
+import FloatingButton from './snippets/floating-button/FloatingButton';
+import FloatingButtonMui from './snippets/floating-button/FloatingButtonMUI';
+import FloatingButtonTW from './snippets/floating-button/FloatingButtonTW';
 
 function App() {
   return (
     <>
-      <ToggleSwitchMUI />
-      <ToggleSwitchTW />
-      <ToggleSwitch />
+      <FloatingButtonMui />
+      <FloatingButtonTW />
+      <FloatingButton />
     </>
   );
 }

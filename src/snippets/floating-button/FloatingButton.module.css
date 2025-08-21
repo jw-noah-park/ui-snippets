@@ -1,0 +1,52 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+}
+.card {
+  width: '100%';
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buttonGroup {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Floating button style */
+.button {
+  background: transparent;
+  color: #5d8aa8;
+  border: 2px solid currentColor;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  border-radius: 5rem;
+  margin-left: 0.5rem;
+  transition:
+    color 0.15s,
+    border-color 0.15s,
+    box-shadow 0.15s,
+    transform 0.15s;
+}
+
+.button:hover {
+  border-color: #ffbf00;
+  color: #ffbf00;
+  box-shadow: 0 0.5em 0.5em -0.4em #ffbf00;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+  .button:hover {
+    transform: none;
+  }
+}
