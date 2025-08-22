@@ -1,0 +1,62 @@
+/* AnimatedSvgText.module.css
+   SIZE TUNING GUIDE (edit numbers only; keep selectors as-is)
+   Choose NEW_VH and compute scale = NEW_VH / 5, then update all four:
+     1) font-size: NEW_VHvh
+     2) stroke-width: 1.5 * scale
+     3) stroke-dasharray: (35*scale) (165*scale)
+     4) @keyframes stroke-5 dashoffset: -200 * scale
+   Example: NEW_VH=8 -> font-size:8vh; stroke-width:2.4; dasharray:56 264; dashoffset:-320
+*/
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  font-family: 'Open Sans', Impact, sans-serif;
+  text-transform: uppercase;
+}
+
+.svg {
+  height: auto;
+}
+
+.text {
+  font-size: 5vh; /* change to NEW_VH */
+  fill: none;
+  stroke-width: 1.5; /* 1.5 * (NEW_VH / 5) */
+  stroke-linejoin: round;
+  stroke-dasharray: 35 165; /* 35 and 165 scaled by (NEW_VH / 5) */
+  stroke-dashoffset: 0;
+  animation: stroke-5 6s linear infinite; /* if NEW_VH changes, update keyframes dashoffset too */
+}
+
+/* Palette + delays (keep or swap colors as you like) */
+.text:nth-child(5n + 1) {
+  stroke: #ff2e63;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #ffa600;
+  animation-delay: -2.4s;
+}
+.text:nth-child(5n + 3) {
+  stroke: #ffffff;
+  animation-delay: -3.6s;
+}
+.text:nth-child(5n + 4) {
+  stroke: #2ee6d6;
+  animation-delay: -4.8s;
+}
+.text:nth-child(5n + 5) {
+  stroke: #0099cc;
+  animation-delay: -6s;
+}
+
+/* If NEW_VH changes, set: -200 * (NEW_VH/5) */
+@keyframes stroke-5 {
+  to {
+    stroke-dashoffset: -200;
+  }
+}

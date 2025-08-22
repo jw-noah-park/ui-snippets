@@ -1,13 +1,13 @@
-import FloatingButton from './snippets/floating-button/FloatingButton';
-import FloatingButtonMui from './snippets/floating-button/FloatingButtonMUI';
-import FloatingButtonTW from './snippets/floating-button/FloatingButtonTW';
+import AnimatedSvgText from './snippets/animated-svg-text/AnimatedSvgText';
+import AnimatedSvgTextMUI from './snippets/animated-svg-text/AnimatedSvgTextMUI';
+import AnimatedSvgTextTW from './snippets/animated-svg-text/AnimatedSvgTextTW';
 
 function App() {
   return (
     <>
-      <FloatingButtonMui />
-      <FloatingButtonTW />
-      <FloatingButton />
+      <AnimatedSvgText />
+      <AnimatedSvgTextMUI />
+      <AnimatedSvgTextTW />
     </>
   );
 }
