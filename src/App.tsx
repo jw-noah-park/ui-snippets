@@ -1,13 +1,13 @@
-import AnimatedSvgText from './snippets/animated-svg-text/AnimatedSvgText';
-import AnimatedSvgTextMUI from './snippets/animated-svg-text/AnimatedSvgTextMUI';
-import AnimatedSvgTextTW from './snippets/animated-svg-text/AnimatedSvgTextTW';
+import TypingTextMUI from './snippets/typing-text/TypeingTextMUI';
+import TypingText from './snippets/typing-text/TypingText';
+import TypingTextTW from './snippets/typing-text/TypingTextTW';
 
 function App() {
   return (
     <>
-      <AnimatedSvgText />
-      <AnimatedSvgTextMUI />
-      <AnimatedSvgTextTW />
+      <TypingTextMUI />
+      <TypingText />
+      <TypingTextTW />
     </>
   );
 }
