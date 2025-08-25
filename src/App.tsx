@@ -1,13 +1,13 @@
-import TypingTextMUI from './snippets/typing-text/TypeingTextMUI';
-import TypingText from './snippets/typing-text/TypingText';
-import TypingTextTW from './snippets/typing-text/TypingTextTW';
+import NeonBoxButton from './snippets/neon-box-button/NeonBoxButton';
+import NeonBoxButtonMUI from './snippets/neon-box-button/NeonBoxButtonMUI';
+import NeonBoxButtonTW from './snippets/neon-box-button/NeonBoxButtonTW';
 
 function App() {
   return (
     <>
-      <TypingTextMUI />
-      <TypingText />
-      <TypingTextTW />
+      <NeonBoxButtonMUI />
+      <NeonBoxButtonTW />
+      <NeonBoxButton />
     </>
   );
 }
