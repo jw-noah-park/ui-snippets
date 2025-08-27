@@ -1,0 +1,26 @@
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: #f8fafc;
+}
+
+.pixel {
+  display: inline-block;
+  font-family:
+    'Press Start 2P', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    monospace;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+  color: #16a34a;
+  text-shadow:
+    4px 0 0 #000000,
+    -4px 0 0 #000000,
+    0 4px 0 #000000,
+    0 -4px 0 #000000,
+    4px 4px 0 #f72900,
+    8px 8px 0 #ff2a00,
+    12px 12px 0 #f72900;
+}

@@ -1,13 +1,13 @@
-import NeonBoxButton from './snippets/neon-box-button/NeonBoxButton';
-import NeonBoxButtonMUI from './snippets/neon-box-button/NeonBoxButtonMUI';
-import NeonBoxButtonTW from './snippets/neon-box-button/NeonBoxButtonTW';
+import PixelText from './snippets/pixel-text/PixelText';
+import PixelTextMUI from './snippets/pixel-text/PixelTextMUI';
+import PixelTextTW from './snippets/pixel-text/PixelTextTW';
 
 function App() {
   return (
     <>
-      <NeonBoxButtonMUI />
-      <NeonBoxButtonTW />
-      <NeonBoxButton />
+      <PixelText />
+      <PixelTextTW />
+      <PixelTextMUI />
     </>
   );
 }
