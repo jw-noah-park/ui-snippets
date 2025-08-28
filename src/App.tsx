@@ -1,13 +1,13 @@
-import SocialButtons from './snippets/social-button/SocialButtons';
-import SocialButtonsMUI from './snippets/social-button/SocialButtonsMUI';
-import SocialButtonsTW from './snippets/social-button/SocialButtonsTW';
+import SubscriptionCards from './snippets/animated-loading/SubscriptionCards';
+import SubscriptionCardsMUI from './snippets/animated-loading/SubscriptionCardsMUI';
+import SubscriptionCardsTW from './snippets/animated-loading/SubscriptionCardsTW';
 
 function App() {
   return (
     <>
-      <SocialButtons />
-      <SocialButtonsMUI />
-      <SocialButtonsTW />
+      <SubscriptionCards />
+      <SubscriptionCardsMUI />
+      <SubscriptionCardsTW />
     </>
   );
 }
