@@ -1,13 +1,13 @@
-import PixelText from './snippets/pixel-text/PixelText';
-import PixelTextMUI from './snippets/pixel-text/PixelTextMUI';
-import PixelTextTW from './snippets/pixel-text/PixelTextTW';
+import SocialButtons from './snippets/social-button/SocialButtons';
+import SocialButtonsMUI from './snippets/social-button/SocialButtonsMUI';
+import SocialButtonsTW from './snippets/social-button/SocialButtonsTW';
 
 function App() {
   return (
     <>
-      <PixelText />
-      <PixelTextTW />
-      <PixelTextMUI />
+      <SocialButtons />
+      <SocialButtonsMUI />
+      <SocialButtonsTW />
     </>
   );
 }

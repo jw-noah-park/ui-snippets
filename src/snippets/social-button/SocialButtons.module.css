@@ -1,0 +1,71 @@
+.socialBtns {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 0 8px;
+  border-radius: 25%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  opacity: 0.99;
+}
+.btn::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 140%;
+  height: 140%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: var(--fill, var(--accent));
+  transition: transform 0.45s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  z-index: 0;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.btn i {
+  position: relative;
+  z-index: 1;
+  font-size: 38px;
+  color: var(--accent, #111);
+  transform: scale(0.9);
+  transition:
+    color 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59),
+    transform 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.btn:hover i {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.facebook {
+  --accent: #1877f2;
+}
+.instagram {
+  --accent: #e4405f;
+  --fill: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+.youtube {
+  --accent: #ff0000;
+}
+.x {
+  --accent: #111;
+}
