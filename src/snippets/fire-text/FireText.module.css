@@ -1,0 +1,53 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.demoText {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.fire {
+  color: #ff6600;
+  text-shadow:
+    0 0 5px #ff751a,
+    0 -2px 10px #ff8800,
+    0 -4px 15px #ff9900,
+    0 -6px 20px #ffb733,
+    0 -8px 25px #ffcc66,
+    0 -10px 30px #fff5cc;
+  animation: fireFlicker 0.25s ease-in-out infinite;
+}
+
+@keyframes fireFlicker {
+  0%,
+  100% {
+    text-shadow:
+      0 0 5px #ff751a,
+      0 -2px 10px #ff8800,
+      0 -4px 15px #ff9900,
+      0 -6px 20px #ffb733,
+      0 -8px 25px #ffcc66,
+      0 -10px 30px #fff5cc;
+  }
+  50% {
+    text-shadow:
+      0 0 8px #ff8800,
+      -1px -3px 12px #ff751a,
+      1px -5px 18px #ff9900,
+      -1px -7px 22px #ffb733,
+      1px -9px 28px #ffcc66,
+      0 -12px 35px #ffffff;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fire {
+    animation: none;
+  }
+}

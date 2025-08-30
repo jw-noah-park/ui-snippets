@@ -1,13 +1,13 @@
-import SubscriptionCards from './snippets/animated-loading/SubscriptionCards';
-import SubscriptionCardsMUI from './snippets/animated-loading/SubscriptionCardsMUI';
-import SubscriptionCardsTW from './snippets/animated-loading/SubscriptionCardsTW';
+import FireText from './snippets/fire-text/FireText';
+import FireTextMUI from './snippets/fire-text/FireTextMUI';
+import FireTextTW from './snippets/fire-text/FireTextTW';
 
 function App() {
   return (
     <>
-      <SubscriptionCards />
-      <SubscriptionCardsMUI />
-      <SubscriptionCardsTW />
+      <FireText />
+      <FireTextMUI />
+      <FireTextTW />
     </>
   );
 }
