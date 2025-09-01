@@ -1,14 +1,24 @@
-import FireText from './snippets/fire-text/FireText';
-import FireTextMUI from './snippets/fire-text/FireTextMUI';
-import FireTextTW from './snippets/fire-text/FireTextTW';
+import SearchBar from './snippets/search-bar/SearchBar';
+import SearchBarMUI from './snippets/search-bar/SearchBarMUI';
+import SearchBarTW from './snippets/search-bar/SearchBarTW';
 
 function App() {
   return (
-    <>
-      <FireText />
-      <FireTextMUI />
-      <FireTextTW />
-    </>
+    <div
+      style={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '48px',
+        background: '#fff',
+      }}
+    >
+      <SearchBar />
+      <SearchBarMUI />
+      <SearchBarTW />
+    </div>
   );
 }
 
