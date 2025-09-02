@@ -1,0 +1,125 @@
+.wrap {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.anchor {
+  position: relative;
+  display: inline-block;
+}
+
+.trigger {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #bebfc5;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.15);
+  color: #1f2937;
+  cursor: pointer;
+}
+.trigger:hover {
+  background: #f8fafc;
+}
+
+.paper {
+  position: absolute;
+  top: calc(100% + 3);
+  left: 0;
+  min-width: 260px;
+  padding: 6px;
+  border: 1px solid rgba(221, 225, 238, 0.8);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.92),
+    rgba(255, 255, 255, 0.86)
+  );
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  box-shadow:
+    0 20px 50px rgba(17, 24, 39, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  z-index: 50;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+}
+.sep {
+  height: 1px;
+  background: rgba(226, 232, 240, 0.9);
+  margin: 8px 6px;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  margin: 2px;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  color: #9ca3af;
+  cursor: pointer;
+  transition:
+    background 0.16s ease,
+    color 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(2, 6, 23, 0.04);
+}
+.icon :global(svg) {
+  width: 18px;
+  height: 18px;
+}
+
+.label {
+  font:
+    500 13px/1.2 system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial;
+}
+
+.item:hover {
+  background: rgba(0, 0, 0, 0.04);
+  color: #111827;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+.item:hover .icon {
+  background: rgba(2, 6, 23, 0.06);
+  color: #111827;
+}
+
+.itemDanger {
+  color: #ef4444;
+}
+.itemDanger .icon {
+  background: rgba(239, 68, 68, 0.08);
+  color: #ef4444;
+}
+.itemDanger:hover {
+  background: rgba(239, 68, 68, 0.08);
+}
+.itemDanger:hover .icon {
+  background: rgba(239, 68, 68, 0.12);
+  color: #ef4444;
+}
