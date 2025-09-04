@@ -1,13 +1,13 @@
-import ActionMenu from './snippets/action-menu/ActionMenu';
-import ActionMenuMUI from './snippets/action-menu/ActionMenuMUI';
-import ActionMenuTW from './snippets/action-menu/ActionMenuTW';
+import BubblyButton from './snippets/bubble-button/BubbleButton';
+import BubbleButtonMUI from './snippets/bubble-button/BubbleButtonMUI';
+import BubbleButtonTW from './snippets/bubble-button/BubbleButtonTW';
 
 function App() {
   return (
     <>
-      <ActionMenuMUI />
-      <ActionMenu />
-      <ActionMenuTW />
+      <BubblyButton />
+      <BubbleButtonMUI />
+      <BubbleButtonTW />
     </>
   );
 }
