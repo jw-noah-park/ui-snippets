@@ -1,13 +1,13 @@
-import BubblyButton from './snippets/bubble-button/BubbleButton';
-import BubbleButtonMUI from './snippets/bubble-button/BubbleButtonMUI';
-import BubbleButtonTW from './snippets/bubble-button/BubbleButtonTW';
+import FloatingActionButton from './snippets/floating-action-button/FloatingActionButton';
+import FloatingActionButtonMUI from './snippets/floating-action-button/FloatingActionButtonMUI';
+import FloatingActionButtonTW from './snippets/floating-action-button/FloatingActionButtonTW';
 
 function App() {
   return (
     <>
-      <BubblyButton />
-      <BubbleButtonMUI />
-      <BubbleButtonTW />
+      <FloatingActionButton />
+      <FloatingActionButtonMUI />
+      <FloatingActionButtonTW />
     </>
   );
 }
